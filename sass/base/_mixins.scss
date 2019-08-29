@@ -1,0 +1,41 @@
+@import './fonts';
+
+@mixin proxima-bold  {
+   font-family: 'Proxima Nova';
+   font-weight: 700;
+}
+
+@mixin proxima-light {
+   font-family: 'Proxima Nova';
+   font-weight: 400;
+}
+
+@mixin proxima-extraBold {
+   font-family: 'Proxima Nova';
+   font-weight: 800;
+}
+
+@mixin proxima-regular {
+   font-family: 'Proxima Nova';
+   font-weight: 400;
+}
+
+@mixin muller-bold {
+   font-family: 'Muller';
+   font-weight: 700;
+}
+
+@mixin muller-light {
+   font-family: 'Muller';
+   font-weight: 300;
+}
+
+@mixin muller-medium {
+   font-family: 'Muller';
+   font-weight: 500;
+}
+
+@mixin muller-regular {
+   font-family: 'MullerRegular';
+   font-weight: 400;
+}
