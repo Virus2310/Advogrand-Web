@@ -42,7 +42,13 @@
             padding: 5px;
             text-align: center;
             margin: 0 auto;
+            transition: all .2s linear;
 
+            &:hover {
+                background: #f3d9d9;
+                border: 1px solid #f3d9d9;
+                border-radius: 7px;
+            }
         }
     }
 

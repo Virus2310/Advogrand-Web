@@ -1,0 +1,54 @@
+
+.promo {
+    min-height: 610px;
+    background: #693724 url('../images/main-bg.png') no-repeat center;
+    background-size: cover;
+}
+
+.promo-content {
+    color: $color-white;
+
+    &__title {
+        @include proxima-bold;
+        font-size: 32px;
+        line-height: 50px;
+        padding-top: 120px;
+        padding-bottom: 40px;
+        
+        span {
+            @include proxima-extraBold;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__subtitle {
+        @include proxima-light;
+        font-size: 24px;
+        line-height: 32px;
+
+        span {
+            @include proxima-bold;
+        }
+        
+    }
+
+    .main-btn {
+        margin-top: 50px;
+        display: block;
+        @include proxima-bold;
+        font-size: 18px;
+        color: $color-white;
+        border-radius: 5px;
+        border: none;
+        background-color: #0f0f0f;
+        background-image: linear-gradient(to top, #c10b0b 0%, #e42626 100%);
+        padding: 15px 49px 15px 45px;
+        transition: all .3s linear;
+
+        &:hover {
+            background: $color-white;
+            color: $color-red-d;
+        }
+    }
+}

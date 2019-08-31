@@ -1,0 +1,72 @@
+.about {
+
+    background: #584a37 url('../images/about-bg.png') no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+
+    &-wrap {
+
+
+        &__title {
+            padding-top: 90px;
+            display: flex;
+            justify-content: center;
+            color: $color-white;
+            @include proxima-bold;
+            font-size: 30px;
+            line-height: 22px;
+            letter-spacing: 0.3px;
+        }
+
+
+    }
+
+    &-content {
+
+        padding-top: 70px;
+
+        &__text {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            color: $color-white;
+            @include proxima-light;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: 0.16px;
+        }
+    }
+}
+
+.count-wrap {
+    padding-top: 75px;
+}
+
+.block-counter {
+
+    p {
+        
+        color: $color-white;
+        @include proxima-light;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.16px;
+        text-align: center;
+        
+
+        span {
+            display: block;
+            color: $color-white;
+            @include proxima-bold;
+            font-size: 48px;
+            line-height: 20px;
+            letter-spacing: 0.48px;
+            margin-bottom: 25px;
+        }
+
+    }
+
+
+}
