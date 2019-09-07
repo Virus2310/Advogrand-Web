@@ -1,0 +1,54 @@
+
+.service {
+	background-color: #f5f5f5;
+	padding-top: 80px;
+	// padding-bottom: 50px;
+	min-height: 500px;
+
+	&-wrap {
+	}
+
+
+	&-title {
+		display: flex;
+		justify-content: center;
+		color: $other-black;
+		@include proxima-bold;
+		font-size: 30px;
+		line-height: 22px;
+		letter-spacing: 0.3px;
+	}
+	
+	&-block {
+		text-align: center;
+		padding-top: 45px;
+		
+
+		&__img {
+
+		}
+
+		&__text {
+			padding-top: 30px;
+			color: #1c1c1c;
+			@include proxima-light;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.16px;
+
+			&--bottom {
+				padding-top: 36px;
+				color: #1c1c1c;
+				@include proxima-light;
+				font-size: 18px;
+				line-height: 22px;
+				letter-spacing: 0.16px;
+			}
+
+			&--str {
+				padding-top: 45px;
+			}
+		}
+	}
+}
+

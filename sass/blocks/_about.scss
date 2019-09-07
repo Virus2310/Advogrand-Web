@@ -64,9 +64,15 @@
             line-height: 20px;
             letter-spacing: 0.48px;
             margin-bottom: 25px;
+            opacity: 0;
         }
 
     }
 
+    .viz {
+        opacity: 1;
+        transition: 1s;
+    }
 
 }
+
