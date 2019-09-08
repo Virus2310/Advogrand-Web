@@ -17,8 +17,6 @@
             line-height: 22px;
             letter-spacing: 0.3px;
         }
-
-
     }
 
     &-content {
@@ -29,7 +27,6 @@
             display: flex;
             justify-content: center;
             text-align: center;
-
             color: $color-white;
             @include proxima-light;
             font-size: 17px;
@@ -73,6 +70,5 @@
         opacity: 1;
         transition: 1s;
     }
-
 }
 

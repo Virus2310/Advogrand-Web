@@ -4,14 +4,84 @@
 	padding-top: 80px;
 
 	&-title {
-		display: flex;
-		justify-content: center;
 		color: $other-black;
 		@include proxima-bold;
 		font-size: 30px;
 		letter-spacing: 0.3px;
-		letter-spacing: 0.3px;
 		line-height: 22px;
 		text-align: center;
 	}
+}
+
+.table {
+	margin-bottom: 50px;
+
+	&-title {
+		text-align: center;
+		&:last-child {
+			border: 1px solid #e8e8e8;
+			border-left: none;
+			border-bottom: none;
+		}
+
+		&--green {
+			background-color: #26b83a;
+			color: $color-white;
+			text-align: center;
+		}
+
+		&--black {
+			color: $color-black;
+			font-size: 14px;
+			line-height: 45px;
+			letter-spacing: 0.13px;
+			text-align: center;
+			padding-left: 18px;
+			padding-right: 18px;
+			border-right: 1px solid #e8e8e8;
+		}
+
+
+	}
+
+	&-subtitle {
+
+		@include proxima-regular;
+		font-size: 14px;
+		line-height: 45px;
+		letter-spacing: 0.13px;
+		padding-left: 45px;
+		padding-right: 40px;
+	}
+
+	.title {
+		color: $color-black;
+		@include proxima-bold;
+		font-size: 17px;
+		line-height: 40px;
+		letter-spacing: 0.14px;
+		padding-left: 18px;
+		
+		
+
+		&--white {
+			color:$color-white;
+			font-size: 17px;
+		}
+	}
+}
+
+.row-title {
+	display: block;
+	text-align: right;
+	margin-right: 30px;
+	color: $color-black;
+	@include proxima-regular;
+	font-size: 16px;
+	line-height: 45px;
+	letter-spacing: 0.13px;
+}
+
+.bot {		
+	border-bottom: 1px solid #e8e8e8;
 }

@@ -1,6 +1,6 @@
 .header {
 
-    &__top {
+    &-top {
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -14,11 +14,11 @@
         color: $other-black;
     }
 
-    &__bottom {
+    &-bottom {
         padding-top: 20px;
         padding-bottom: 20px;
 
-        &-phone {
+        &__phone {
             a {
                 text-align: right;
                 display: block;
