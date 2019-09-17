@@ -1,0 +1,55 @@
+
+.advice {
+	background: #4b4a4a url('../../images/advice-bg.jpg') no-repeat center;
+	background-size: cover;
+	min-height: 470px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	&-title {
+		color: $color-white;
+		@include proxima-bold;
+		font-size: 30px;
+		letter-spacing: 1.5px;
+	}
+
+	&-block {
+		margin-top: 65px;
+	}
+
+	&-list {
+		list-style-type: none;
+		padding-left: 0;
+		
+		li {
+			color: $color-white;
+			@include muller-light;
+			font-size: 18px;
+			margin-bottom: 10px;
+
+			span {
+				color: #e41e1e;
+				margin-right: 20px;
+			}
+
+			a {
+				text-decoration: underline;
+				color: $color-white; 
+				transition: all .1s linear;
+
+				&:hover {
+					color: red;
+				}
+			}
+		}
+		
+	}
+}
+
+.app-block:first-child {
+	margin-top: -50px;
+
+	img {
+		margin-bottom: 40px;
+	}
+}

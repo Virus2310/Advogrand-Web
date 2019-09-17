@@ -2,6 +2,7 @@
 .advantages {
 
 	padding-top: 80px;
+	padding-bottom: 80px;
 
 	&-title {
 		color: $other-black;
@@ -18,6 +19,7 @@
 
 	&-title {
 		text-align: center;
+
 		&:last-child {
 			border: 1px solid #e8e8e8;
 			border-left: none;
@@ -60,7 +62,7 @@
 		font-size: 17px;
 		line-height: 40px;
 		letter-spacing: 0.14px;
-		padding-left: 18px;
+		// padding-left: 15px;
 		
 		
 
@@ -84,4 +86,43 @@
 
 .bot {		
 	border-bottom: 1px solid #e8e8e8;
+}
+
+.used-block {
+
+	&__title {
+		color: $other-black;
+		@include proxima-bold;
+		font-size: 17px;
+		letter-spacing: 0.16px;
+	}
+
+}
+
+.who-used {
+
+		p {
+			display: inline-block;
+			color: $other-black;
+			@include proxima-regular;
+			font-size: 16px;
+			line-height: 35px;
+			padding-left: 20px;
+
+			span {
+				font-weight: 700;
+				letter-spacing: 0.16px;
+			}
+		}
+}
+
+.main-btn--follow {
+	margin-top: 20px;
+	padding: 15px 85px;
+	transition: all .2s ease;
+
+	&:hover {
+		background: red;
+		color: $color-white;
+	}
 }

@@ -33,7 +33,10 @@
         
     }
 
-    .main-btn {
+    
+}
+
+.main-btn {
         margin-top: 50px;
         display: block;
         @include proxima-bold;
@@ -51,4 +54,3 @@
             color: $color-red-d;
         }
     }
-}
