@@ -1,0 +1,57 @@
+
+.pricings {
+	background-color: #f5f5f5;
+	color: #313131;
+
+
+	h1 {
+		@include muller-bold;
+		font-size: 30px;
+		letter-spacing: 1.5px;
+		padding-top: 70px;
+	}
+
+	.card {
+		@include muller-bold;
+		font-size: 18px;
+		line-height: 25px;
+		padding-top: 25px;
+	}
+
+	.choose {
+		display: flex;
+		justify-content: flex-start;
+		@include muller-light;
+		font-size: 16px;
+	}
+	
+	.pick-rate {
+
+		ul {
+			display: flex;
+			justify-content: space-around;
+			list-style-type: none;
+
+			li {
+
+				&:nth-child(2) > a {
+					@include muller-medium;
+					font-size: 14px;
+					text-transform: uppercase;
+					color: #e42626;
+					border-radius: 5px;
+					border: 2px solid #e42626;
+					padding: 10px 10px 7px 10px;
+				}
+
+
+				a {
+					color:#3c3c3c;
+					text-decoration: none;
+					text-transform: uppercase;
+					@include muller-medium;
+				}
+			}
+		}
+	}
+}
