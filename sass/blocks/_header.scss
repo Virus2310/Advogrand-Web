@@ -19,22 +19,37 @@
             display: flex;
             justify-content: center;
             font-size: 18px;
-        }        
+        }
+                
     }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        .header__phone {
+            text-align: center;
+            font-size: 18px;
+        }
+        
+    }
+
+    
 
     .nav {
 
         &__link {
+            display: block;
             @include proxima-light;
             line-height: 22px;
             letter-spacing: 0.14px;
             color: $other-black;
             font-size: 16px;
             transition: all .1s linear;
-
+        
             &:hover {
                 color: #c91111;
             }
+        }
+
+        .active {
+            color: red;
         }
 
         @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
@@ -46,6 +61,18 @@
             }   
         }
     }
+    
+    @media (max-width: $screen-sm-max) {
+        #myTopNav{
+            visibility: hidden;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 
     .btn {
 
@@ -79,6 +106,11 @@
         }
     }
 
+    @media (max-width: $screen-sm-max) {
+        .header-logo {
+            text-align: center;
+        }
+    }
     
 
     &-bottom {
@@ -118,6 +150,13 @@
             }
         }
     }
+    @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+            .header-social{
+                text-align: center;
+                margin-top: 20px;
+                
+            }   
+        }
 
 }
 
@@ -129,7 +168,7 @@
 }
 
 .header-lawyer {
-    text-align: right;
+    text-align: center;
     color: $other-black;
     @include proxima-light;
     font-size: 16px;
@@ -140,6 +179,16 @@
 
 @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
     .header-lawyer{
-        // font-size: 18px;
+        font-size: 20px;
+        margin-left: 25px;
     }   
 }
+
+@media (max-width: $screen-sm-max) {
+    .header-lawyer{
+        font-size: 20px;
+        margin-top: 20px;
+    }   
+}
+
+
