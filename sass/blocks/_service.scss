@@ -5,6 +5,7 @@
 	min-height: 500px;
 
 	&-wrap {
+
 	}
 
 
@@ -17,6 +18,8 @@
 		line-height: 22px;
 		letter-spacing: 0.3px;
 	}
+
+
 	
 	&-block {
 		text-align: center;
@@ -45,4 +48,10 @@
 		}
 	}
 }
+
+@media (max-width: $screen-sm-max){
+		.services-wrap__title {
+			text-align: center;
+		}
+	}
 
