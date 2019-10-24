@@ -1,5 +1,5 @@
 
-.pricings {
+.rates {
 	background-color: #f5f5f5;
 	color: #313131;
 
@@ -15,7 +15,9 @@
 		@include muller-bold;
 		font-size: 18px;
 		line-height: 25px;
-		padding-top: 25px;
+        padding-top: 25px;
+        background-color: none;
+        border: none;
 	}
 
 	.choose {
