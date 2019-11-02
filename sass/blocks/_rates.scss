@@ -57,3 +57,36 @@
 		}
 	}
 }
+
+.content-card{
+	min-height: 900px;
+
+	&--gray{
+		border: 1px solid #e8e8e8;
+		background-color: #ffffff;
+	}
+
+	&__img {
+		// display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.service-card{
+		color: #000000;
+		
+		&__name{
+			@include muller-light;
+			font-weight: 400;
+			font-size: 15px;
+			margin-bottom: 0px;
+		}
+
+		&__num {
+			@include muller-medium;
+			font-size: 15px;
+			margin-bottom: 0px;
+			
+		}
+	}

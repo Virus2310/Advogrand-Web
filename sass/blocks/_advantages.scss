@@ -9,7 +9,7 @@
 		@include proxima-bold;
 		font-size: 30px;
 		letter-spacing: 0.3px;
-		line-height: 22px;
+		line-height: 35px;
 		text-align: center;
 	}
 }
@@ -64,8 +64,6 @@
 		letter-spacing: 0.14px;
 		// padding-left: 15px;
 		
-		
-
 		&--white {
 			color:$color-white;
 			font-size: 17px;
@@ -89,6 +87,7 @@
 }
 
 .used-block {
+	padding-top: 25px;
 
 	&__title {
 		color: $other-black;
