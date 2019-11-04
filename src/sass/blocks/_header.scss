@@ -5,6 +5,13 @@
         padding-bottom: 10px;
     }
 
+    &-logo {
+
+    	&__img {
+    		max-width: 100%;	
+    	}
+    }
+
     &__phone {
         display: block;
         @include proxima-bold;

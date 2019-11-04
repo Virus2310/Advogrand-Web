@@ -12,14 +12,14 @@ const cleanCSS = require('gulp-clean-css');
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "src"
         }
     });
 });
 
 
 gulp.task('styles', function(){
-    return gulp.src("./sass/**/*.scss") // путь к файлам-исходникам,  /sass/**/*.scss означает выбрать все файлы с расширением .scss из всех подпапок папки /sass
+    return gulp.src("src/sass/**/*.scss") // путь к файлам-исходникам,  /sass/**/*.scss означает выбрать все файлы с расширением .scss из всех подпапок папки /sass
          .pipe(sass({
                     outputStyle: 'compressed'
                 }).on('error', sass.logError))
@@ -32,13 +32,13 @@ gulp.task('styles', function(){
             cascade: false
          }))
          .pipe(cleanCSS({compatibility: 'ie8'}))
-         .pipe(gulp.dest("./css")) // путь к папке, куда помещаем конечные файлы
+         .pipe(gulp.dest("src/css")) // путь к папке, куда помещаем конечные файлы
          .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function(){
-   gulp.watch('./sass/**/*.scss', gulp.parallel('styles'));  // Наблюдение за SASS файлами
-   gulp.watch('./*.html').on('change', browserSync.reload);  // .on(‘change’, browserSync.reload) означает что, если есть ошибки, вывести их в консоль.
+   gulp.watch('src/sass/**/*.scss', gulp.parallel('styles'));  // Наблюдение за SASS файлами
+   gulp.watch('src/*.html').on('change', browserSync.reload);  // .on(‘change’, browserSync.reload) означает что, если есть ошибки, вывести их в консоль.
 });
 
 gulp.task('default', gulp.parallel('watch','server', 'styles'));
