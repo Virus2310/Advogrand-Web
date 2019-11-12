@@ -2,6 +2,7 @@
 .rates {
 	background-color: #f5f5f5;
 	color: #313131;
+	padding-bottom: 45px;
 
 
 	h1 {
@@ -58,35 +59,154 @@
 	}
 }
 
-.content-card{
-	min-height: 900px;
-
+.content-card {
+		
 	&--gray{
 		border: 1px solid #e8e8e8;
 		background-color: #ffffff;
 	}
 
+	&__main {
+		position:relative;
+		min-height: 1000px;
+		
+	}
+
 	&__img {
-		// display: block;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 }
 
-.service-card{
-		color: #000000;
+.service-card {
+	color: #000000;
 		
-		&__name{
-			@include muller-light;
-			font-weight: 400;
-			font-size: 15px;
-			margin-bottom: 0px;
+	&__name{
+		@include muller-light;
+		font-weight: 400;
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+
+	&__num {
+		@include muller-medium;
+		font-size: 15px;
+		margin-bottom: 0px;		
+	}
+}
+
+.price-content {
+	position:absolute;
+	bottom:0;
+	left: 50px;
+	padding-bottom: 50px;
+
+	&__much {
+		color: #000000;
+		@include muller-light;
+		font-size: 16px;
+		font-weight: 400;
+		
+		span{
+			display: block;
+			color: #000000;
+			@include muller-bold;
+			font-size: 34px;
+			font-weight: 700;
+		}	
+	}
+
+	.btn-consultation {
+		width: 200px;
+		height: 55px;
+		display: block;
+		margin: 0 auto;
+		color: #ffffff;
+		@include muller-bold;
+		font-size: 18px;
+		font-weight: 400;
+		border-radius: 5px;
+		background-color: #000000;
+		padding: 15px 35px 18px 46px;
+		transition: .2s linear;
+		&--orange {
+			background-image: -webkit-linear-gradient(bottom, #ff2e00 0%, #ff4c25 100%);
+			background-image: -o-linear-gradient(bottom, #ff2e00 0%, #ff4c25 100%);
+			background-image: linear-gradient(to top, #ff2e00 0%, #ff4c25 100%);
+
+			&:hover {
+				text-decoration: none;
+				box-shadow: 0 0 15px 1px #ff2e00;
+			}		
 		}
 
-		&__num {
-			@include muller-medium;
-			font-size: 15px;
-			margin-bottom: 0px;
-			
+		&--green {
+			border-radius: 5px;
+			background-image: -webkit-linear-gradient(bottom, #008e00 0%, #00a300 100%);
+			background-image: -o-linear-gradient(bottom, #008e00 0%, #00a300 100%);
+			background-image: linear-gradient(to top, #008e00 0%, #00a300 100%);
+			&:hover {
+				text-decoration: none;
+				box-shadow: 0 0 15px 1px #008e00;
+			}
+		}
+
+		&--blue {
+			border-radius: 5px;
+			background-image: -webkit-linear-gradient(bottom, #001c67 0%, #02388f 100%);
+			background-image: -o-linear-gradient(bottom, #001c67 0%, #02388f 100%);
+			background-image: linear-gradient(to top, #001c67 0%, #02388f 100%);
+			&:hover {
+				text-decoration: none;
+				box-shadow: 0 0 15px 1px #001c67;	
+			}
 		}
 	}
+
+	.btn-buy {
+		width: 200px;
+		height: 55px;
+		display: block;
+		margin: 0 auto;
+		color: #ffffff;
+		padding: 15px 45px 18px 46px; 
+		margin-top: 15px;
+		border-radius: 5px;
+		background-color: #9a9a9a;
+		transition: .2s linear;
+		@include muller-bold;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		
+		&--orange {
+			&:hover {
+				background-image: -webkit-linear-gradient(bottom, #ff2e00 0%, #ff4c25 100%);
+				background-image: -o-linear-gradient(bottom, #ff2e00 0%, #ff4c25 100%);
+				background-image: linear-gradient(to top, #ff2e00 0%, #ff4c25 100%);	
+				text-decoration: none;
+			}
+		}
+
+		&--green {
+			&:hover {
+				background-image: -webkit-linear-gradient(bottom, #008w 0%, green 100%);
+				background-image: -o-linear-gradient(bottom, #008w 0%, green 100%);
+				background-image: linear-gradient(to top, #008e00 0%, green 100%);	
+				text-decoration: none;
+			}
+		}
+
+		&--blue {
+			&:hover {
+				background-image: linear-gradient(to top, #001c67 0%, #02388f 100%);	
+				text-decoration: none;
+			}
+		}
+		
+
+		
+
+		
+	}
+}
