@@ -39,6 +39,13 @@
 			}
 		}
 	}
+
+	@media (max-width: $screen-md-max) {
+		.feedback__nav-link {
+			margin-right: 0;
+		}
+
+	}
 }
 
 .feedback-block {

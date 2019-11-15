@@ -1,81 +1,106 @@
 .header {
 
+
     &-top {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid #f4f4f4;
+        background-color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $screen-md-min) {
+        .header-top {
+        }
+    }
+
+
+
+    &-logo {
+    	&__img {
+    		max-width: 100%;	
+    	}
+    }
+
+    @media (max-width: $screen-md-max) {
+        .phone {
+            display: none;
+        }
     }
 
     &__phone {
         display: block;
         @include proxima-bold;
         font-size: 16px;
-        line-height: 22px;
         letter-spacing: 0.14px;
         color: $other-black;
     }
 
-         @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+    @media (max-width: $screen-lg-max) {
         .header__phone {
             display: flex;
             justify-content: center;
             font-size: 18px;
         }
-                
-    }
-        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-        .header__phone {
-            text-align: center;
-            font-size: 18px;
-        }
-        
     }
 
-    
 
     .nav {
-
         &__link {
             display: block;
             @include proxima-light;
-            line-height: 22px;
+            margin-right: 25px;
             letter-spacing: 0.14px;
             color: $other-black;
-            font-size: 16px;
+            font-size: 18px;
             transition: all .1s linear;
-        
             &:hover {
                 color: #c91111;
             }
         }
-
         .active {
             color: red;
         }
 
-        @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
-            .nav__link {
-                display: block;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                font-size: 18px;
-            }   
+    }
+
+
+
+    @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+        .nav__link {
+            display: block;
+            margin-top: 15px;
         }
     }
-    
-    @media (max-width: $screen-sm-max) {
-        #myTopNav{
-            visibility: hidden;
-        }
 
+    @media (max-width: $screen-sm-max){
+        .nav__link {
+            margin-top: 15px;
+            font-size: 20px;
+            margin-right: 0;
+        }
+    }
+
+    @media (min-width: $screen-md-min) {
+        .navbar {
+            // margin-top: -20px;
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
         .btn {
             display: flex;
             justify-content: center;
         }
     }
-
-
     .btn {
-
         &__call {
             display: block;
             border-radius: 5px;
@@ -95,14 +120,14 @@
         }
 
         @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
-            .btn__call{
-                font-size: 16px;
-                padding: 10px 23px;
+            .btn__call {
+                display: none;
+                font-size: 17px;
+                padding: 20px 23px;
                 margin: 0 auto;
                 margin-top: 10px;
                 margin-bottom: 15px;
-
-            }   
+            }
         }
     }
 
@@ -111,12 +136,11 @@
             text-align: center;
         }
     }
-    
 
     &-bottom {
         padding-top: 20px;
         padding-bottom: 20px;
-
+        margin-top: 55px;
         &__phone {
             a {
                 text-align: right;
@@ -130,8 +154,15 @@
         }
     }
 
-    &-social {
+    @media (max-width: $screen-sm-max) {
+        .header-bottom__phone a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
 
+    &-social {
         &__link {
             display: inline-block;
             width: 40px;
@@ -142,7 +173,6 @@
             text-align: center;
             margin: 0 auto;
             transition: all .2s linear;
-
             &:hover {
                 background: #f3d9d9;
                 border: 1px solid #f3d9d9;
@@ -150,15 +180,14 @@
             }
         }
     }
-    @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
-            .header-social{
-                text-align: center;
-                margin-top: 20px;
-                
-            }   
+    @media (max-width: $screen-md-max) {
+        .header-social {
+            text-align: center;
+            margin-top: 20px;
         }
-
+    }
 }
+
 
 
 .header-line {
@@ -174,21 +203,20 @@
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.14px;
-
 }
 
 @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
-    .header-lawyer{
+    .header-lawyer {
         font-size: 20px;
         margin-left: 25px;
-    }   
+    }
 }
 
 @media (max-width: $screen-sm-max) {
-    .header-lawyer{
+    .header-lawyer {
         font-size: 20px;
         margin-top: 20px;
-    }   
+    }
 }
 
 

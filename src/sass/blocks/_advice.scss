@@ -53,3 +53,22 @@
 		margin-bottom: 40px;
 	}
 }
+
+@media (max-width: $screen-sm-max) {
+	.advice-title {
+		font-size: 38px;
+	}
+
+	.advice-block {
+		margin-top: 30px;
+	}
+
+	.app-block {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.app-block:first-child {
+		margin-top: 10px;
+	}
+}

@@ -37,6 +37,13 @@
     }
 }
 
+@media (max-width: $screen-sm-max) {
+    .about-content__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
 .count-wrap {
     padding-top: 75px;
 }

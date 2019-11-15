@@ -2,11 +2,11 @@
 .service {
 	background-color: #f5f5f5;
 	padding-top: 80px;
-	min-height: 500px;
+	min-height: 400px;
 
 	&-wrap {
-	}
 
+	}
 
 	&-title {
 		display: flex;
@@ -17,7 +17,8 @@
 		line-height: 22px;
 		letter-spacing: 0.3px;
 	}
-	
+
+
 	&-block {
 		text-align: center;
 		padding-top: 45px;
@@ -45,4 +46,10 @@
 		}
 	}
 }
+
+@media (max-width: $screen-sm-max){
+		.services-wrap__title {
+			text-align: center;
+		}
+	}
 
