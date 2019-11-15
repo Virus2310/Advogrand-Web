@@ -9,7 +9,7 @@ const cleanCSS = require('gulp-clean-css');
 
 
 // Static server
-gulp.task('server', function() {
+gulp.task('server', async function() {
     browserSync.init({
         server: {
             baseDir: "./"
@@ -18,7 +18,7 @@ gulp.task('server', function() {
 });
 
 
-gulp.task('styles', function(){
+gulp.task('styles', async function(){
     return gulp.src("./sass/**/*.scss") // путь к файлам-исходникам,  /sass/**/*.scss означает выбрать все файлы с расширением .scss из всех подпапок папки /sass
          .pipe(sass({
                     outputStyle: 'compressed'
@@ -28,7 +28,7 @@ gulp.task('styles', function(){
             suffix: ".min",
          }))
          .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist:  ['last 2 versions'],
             cascade: false
          }))
          .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -36,7 +36,7 @@ gulp.task('styles', function(){
          .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function(){
+gulp.task('watch',async function(){
    gulp.watch('./sass/**/*.scss', gulp.parallel('styles'));  // Наблюдение за SASS файлами
    gulp.watch('./*.html').on('change', browserSync.reload);  // .on(‘change’, browserSync.reload) означает что, если есть ошибки, вывести их в консоль.
 });
