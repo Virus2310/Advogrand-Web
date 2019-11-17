@@ -18,13 +18,8 @@ gulp.task('server', async function() {
 });
 
 
-<<<<<<< HEAD
-gulp.task('styles', async function(){
-    return gulp.src("./sass/**/*.scss") // путь к файлам-исходникам,  /sass/**/*.scss означает выбрать все файлы с расширением .scss из всех подпапок папки /sass
-=======
 gulp.task('styles', function(){
     return gulp.src("src/sass/**/*.scss") // путь к файлам-исходникам,  /sass/**/*.scss означает выбрать все файлы с расширением .scss из всех подпапок папки /sass
->>>>>>> 004edd30c6fa316545d08b3b23a4815f7be4d80d
          .pipe(sass({
                     outputStyle: 'compressed'
                 }).on('error', sass.logError))
@@ -41,15 +36,9 @@ gulp.task('styles', function(){
          .pipe(browserSync.stream());
 });
 
-<<<<<<< HEAD
-gulp.task('watch',async function(){
-   gulp.watch('./sass/**/*.scss', gulp.parallel('styles'));  // Наблюдение за SASS файлами
-   gulp.watch('./*.html').on('change', browserSync.reload);  // .on(‘change’, browserSync.reload) означает что, если есть ошибки, вывести их в консоль.
-=======
 gulp.task('watch', function(){
    gulp.watch('src/sass/**/*.scss', gulp.parallel('styles'));  // Наблюдение за SASS файлами
    gulp.watch('src/*.html').on('change', browserSync.reload);  // .on(‘change’, browserSync.reload) означает что, если есть ошибки, вывести их в консоль.
->>>>>>> 004edd30c6fa316545d08b3b23a4815f7be4d80d
 });
 
 gulp.task('default', gulp.parallel('watch','server', 'styles'));

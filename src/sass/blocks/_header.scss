@@ -1,6 +1,4 @@
 .header {
-
-
     &-top {
         display: flex;
         justify-content: center;
@@ -14,11 +12,6 @@
         left: 0;
         z-index: 100;
         margin: 0 auto;
-    }
-
-    @media (min-width: $screen-md-min) {
-        .header-top {
-        }
     }
 
 
@@ -88,11 +81,6 @@
         }
     }
 
-    @media (min-width: $screen-md-min) {
-        .navbar {
-            // margin-top: -20px;
-        }
-    }
 
     @media (max-width: $screen-sm-max) {
         .btn {
@@ -192,8 +180,8 @@
 
 .header-line {
     width: 100%;
-    height: 1px;
-    background-color: #d8d8d8;
+    height: 2px;
+    background-color: #050505;
 }
 
 .header-lawyer {
