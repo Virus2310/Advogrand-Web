@@ -1,4 +1,5 @@
 
+
 let time = 2;
 let cc = 1;
 $(window).scroll(function () {
@@ -45,3 +46,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+////////////
+
+

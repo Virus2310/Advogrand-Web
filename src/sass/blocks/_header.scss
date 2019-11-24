@@ -82,7 +82,7 @@
 
     @media (max-width: $screen-sm-max){
         .nav__link {
-            margin-top: 15px;
+            margin-top: 10px;
             font-size: 20px;
             margin-right: 0;
         }
@@ -96,8 +96,9 @@
 
     @media (max-width: $screen-sm-max) {
         .btn {
-            display: flex;
+            display: none;
             justify-content: center;
+
         }
     }
     .btn {
@@ -133,13 +134,13 @@
 
     @media (max-width: $screen-sm-max) {
         .header-logo {
-            text-align: center;
+            // text-align: center;
         }
     }
 
     &-bottom {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 17px;
+        padding-bottom: 10px;
         margin-top: 55px;
         &__phone {
             a {
@@ -151,6 +152,12 @@
                 line-height: 22px;
                 letter-spacing: 0.18px;
             }
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .header-bottom {
+            padding-top: 0;
         }
     }
 

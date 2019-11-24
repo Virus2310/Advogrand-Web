@@ -26,5 +26,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "layzr.js": "^2.2.2"
+  }
 }

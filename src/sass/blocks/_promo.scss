@@ -36,6 +36,12 @@
     
 }
 
+@media (max-width: $screen-sm-max) {
+    .promo-content__title {
+        padding-top: 45px;
+    }
+}
+
 .main-btn {
         margin-top: 50px;
         display: block;

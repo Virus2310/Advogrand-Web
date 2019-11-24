@@ -27,6 +27,7 @@
 			letter-spacing: 0.7px;
 			margin: 0 30px; 
 			padding: 10px;
+			border: 2px solid transparent;
 
 			&:hover {
 				color: #e42626;
@@ -35,21 +36,23 @@
 
 			&:focus {
 				border-radius: 5px;
-				border: 2px solid #e42626;
+				border-color: #c91111;
+				outline: none;
 			}
 		}
 	}
 
 	@media (max-width: $screen-md-max) {
 		.feedback__nav-link {
-			margin-right: 0;
+			margin: 0 5px;
+			font-size: 14px;
 		}
 
 	}
 }
 
 .feedback-block {
-	margin-top: 25px;
+	// margin-top: 25px;
 
 	&__img {
 		position: relative;		
@@ -74,5 +77,14 @@
 			text-decoration: underline;
 		}
 
+	}
+}
+
+@media (max-width: $screen-md-max) {
+	.video-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 }
