@@ -1,6 +1,4 @@
 .header {
-
-
     &-top {
         display: flex;
         justify-content: center;
@@ -16,6 +14,11 @@
         margin: 0 auto;
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3e426099f32102a7fac659ba47cc08c080b2a8a1
     &-logo {
     	&__img {
     		max-width: 100%;	
@@ -81,11 +84,6 @@
         }
     }
 
-    @media (min-width: $screen-md-min) {
-        .navbar {
-            // margin-top: -20px;
-        }
-    }
 
     @media (max-width: $screen-sm-max) {
         .btn {
@@ -191,8 +189,8 @@
 
 .header-line {
     width: 100%;
-    height: 1px;
-    background-color: #d8d8d8;
+    height: 2px;
+    background-color: #050505;
 }
 
 .header-lawyer {

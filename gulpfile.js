@@ -9,7 +9,7 @@ const cleanCSS = require('gulp-clean-css');
 
 
 // Static server
-gulp.task('server', function() {
+gulp.task('server', async function() {
     browserSync.init({
         server: {
             baseDir: "src"
@@ -28,7 +28,7 @@ gulp.task('styles', function(){
             suffix: ".min",
          }))
          .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist:  ['last 2 versions'],
             cascade: false
          }))
          .pipe(cleanCSS({compatibility: 'ie8'}))
