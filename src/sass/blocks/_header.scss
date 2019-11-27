@@ -16,13 +16,6 @@
         margin: 0 auto;
     }
 
-    @media (min-width: $screen-md-min) {
-        .header-top {
-        }
-    }
-
-
-
     &-logo {
     	&__img {
     		max-width: 100%;	
@@ -98,7 +91,6 @@
         .btn {
             display: none;
             justify-content: center;
-
         }
     }
     .btn {
