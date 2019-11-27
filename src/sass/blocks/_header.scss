@@ -6,7 +6,7 @@
         border-bottom: 1px solid #f4f4f4;
         background-color: white;
         padding-top: 5px;
-        padding-bottom: 5px;
+        // padding-bottom: 5px;
         position: fixed;
         top: 0;
         left: 0;
@@ -14,11 +14,12 @@
         margin: 0 auto;
     }
 
-<<<<<<< HEAD
-=======
+    @media (max-width: $screen-sm-max) {
+        .header-top {
+            padding-bottom: 5px;
+        }
+    }
 
-
->>>>>>> 3e426099f32102a7fac659ba47cc08c080b2a8a1
     &-logo {
     	&__img {
     		max-width: 100%;	
@@ -124,7 +125,7 @@
 
     @media (max-width: $screen-sm-max) {
         .header-logo {
-            // text-align: center;
+            text-align: center;
         }
     }
 
@@ -180,7 +181,7 @@
     @media (max-width: $screen-md-max) {
         .header-social {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 10px;
         }
     }
 }
@@ -212,7 +213,7 @@
 @media (max-width: $screen-sm-max) {
     .header-lawyer {
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
 
