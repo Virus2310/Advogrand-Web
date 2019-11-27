@@ -2,11 +2,9 @@
 
     background: #382d24 url('../images/about-bg.jpg') no-repeat center;
     background-size: cover;
-    min-height: 600px;
+    padding-bottom: 25px;
 
     &-wrap {
-
-
         &__title {
             padding-top: 90px;
             display: flex;
