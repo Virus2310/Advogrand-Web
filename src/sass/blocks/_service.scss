@@ -4,10 +4,6 @@
 	padding-top: 80px;
 	min-height: 400px;
 
-	&-wrap {
-
-	}
-
 	&-title {
 		display: flex;
 		justify-content: center;
@@ -33,11 +29,6 @@
 
 			&--bottom {
 				padding-top: 36px;
-				color: $other-black;
-				@include proxima-light;
-				font-size: 18px;
-				line-height: 22px;
-				letter-spacing: 0.16px;
 			}
 
 			&--str {
