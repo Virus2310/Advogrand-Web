@@ -1,0 +1,103 @@
+.footer {
+    
+    &-wrap {
+        background-color: #fafafa;
+
+    }
+
+    &-form {
+
+        &__title {
+            color: #000000;
+            @include muller-bold;
+            font-size: 18px;
+        }
+
+    }
+
+    &-info {
+        color: #000000;
+
+        &__contacts {
+            @include muller-bold;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .num-info, .email-info, .time-info {
+            span {
+                @include muller-light;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            p {
+                @include muller-light;
+                font-size: 17px;
+                font-weight: 700;
+            }
+        }
+    }
+    &-black {
+        background-color: #0e0e0e;
+    }
+
+}
+
+.main-form {
+
+    &__title {
+        color: #000000;
+        @include muller-light;
+        font-weight: 400;
+    }
+
+    &__input {
+        width: 320px;
+        height: 50px;
+        font-size: 24px;
+        border-radius: 5px;
+        border: 1px solid #dddddd;
+        background-color: #ffffff;
+        outline: none;
+    }
+
+    &__mess {
+        width: 320px;
+        height: 80px;
+        font-size: 24px;
+        border-radius: 5px;
+        border: 1px solid #dddddd;
+        background-color: #ffffff;
+        outline: none;
+    }
+
+    .order-tel {
+        border: none;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, #cc0000 0%, #d00000 100%);
+        padding: 23px 28px;
+        color: #ffffff;
+        @include muller-bold;
+        font-size: 18px;
+        &:hover {
+            background-image: blue;
+        }
+
+
+
+    }
+
+    .return-call {
+        color: #000000;
+        @include muller-light;
+        font-size: 16px;
+        font-weight: 400;
+        
+    }
+
+}
+
+.develop {
+    color: white;
+}
