@@ -1,6 +1,5 @@
 
 .advantages {
-
 	padding-top: 80px;
 	padding-bottom: 80px;
 
@@ -17,14 +16,11 @@
 
 .table {
 	margin-bottom: 50px;
-	border-right: 1px solid #e8e8e8;
-	border-top: 1px solid #e8e8e8;
 	
 	&-title {
 		text-align: center;
 
 		&:last-child {
-			border: 1px solid #e8e8e8;
 			border-left: none;
 			border-bottom: none;
 		}
@@ -43,15 +39,12 @@
 			text-align: center;
 			padding-left: 18px;
 			padding-right: 18px;
-			border-right: 1px solid #e8e8e8;
-
 		}
 
 
 	}
 
 	&-subtitle {
-
 		@include proxima-regular;
 		font-size: 14px;
 		line-height: 45px;
@@ -67,7 +60,6 @@
 		line-height: 40px;
 		letter-spacing: 0.14px;
 
-		
 		&--white {
 			color:$color-white;
 			font-size: 17px;
@@ -87,9 +79,6 @@
 	
 }
 
-.bot {		
-	border-bottom: 1px solid #e8e8e8;
-}
 
 .used-block {
 	padding-top: 25px;
